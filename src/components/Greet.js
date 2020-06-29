@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Greet() {
+const Greet = () => {
   return <h2>Demo <code>ReactJS</code> App.</h2>;
 }
 
