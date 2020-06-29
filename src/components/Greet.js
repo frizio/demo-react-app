@@ -1,5 +1,7 @@
 import React from 'react';
 
-export const Greet = () => {
+const Greet = () => {
   return <h2>Demo <code>ReactJS</code> App.</h2>;
 }
+
+export default Greet;
