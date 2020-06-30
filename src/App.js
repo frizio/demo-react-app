@@ -15,7 +15,11 @@ class App extends Component {
           <button>To Do</button>
         </Greet>
         <Greet name='Carl' heroName='Alfred' />
-        {/*<Welcome/>*/}
+
+        <Welcome name='Dave' heroName='Jocker'/>
+        <Welcome name='Ed' heroName='Two Face'/>
+        <Welcome name='Fran' heroName='Catwoman'e/>
+        
         {/* <Hello/> */}
       </div>
     );
