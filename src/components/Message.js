@@ -9,10 +9,24 @@ class Message extends Component {
     }
   }
 
-  render() {
-    console.log(this.props);
-  return <h3>{this.state.message}!</h3>
+  changeMessage() {
+    this.setState(
+      {
+        message: 'Thank you for subscribing'
+      }
+    );
   }
+
+  render() {
+    console.log(this.state);
+    return (
+      <div>
+        <h3>{this.state.message}!</h3>
+        <button onClick={()=> this.changeMessage()}>Subscribe</button>
+      </div>
+    );
+  }
+
 }
 
 export default Message
