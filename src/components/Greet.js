@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Greet = (props) => {
-  console.log(props);
+const Greet = ({name, heroName}) => {
+
   return (
     <div>
-      <h2>Demo <code>ReactJS</code> App with {props.name} aka {props.heroName}.</h2>
-      {props.children}
+      <h2>Demo <code>ReactJS</code> App with {name} aka {heroName}.</h2>
+      {/* {props.children} */}
     </div>
   );
+
 }
 
-export default Greet;
+export default Greet
