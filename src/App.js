@@ -22,8 +22,8 @@ class App extends Component {
         </Greet>
         <Greet name='Carl' heroName='Alfred' />
         */}
-        {/*
         <Welcome name='Dave' heroName='Jocker'/>
+        {/*
         <Welcome name='Ed' heroName='Two Face'/>
         <Welcome name='Fran' heroName='Catwoman'e/>
         */}
