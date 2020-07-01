@@ -12,21 +12,29 @@ class Counter extends Component {
   
   increment() {
     this.setState(
-      {
-        count: this.state.count + 1
-      },
+      (prevState, props) => ({
+          count: prevState.count + 1
+      }),
       () => {
         console.log('Callback (async) count value', this.state.count);
       }
     );
-    console.log('Sync count value:', this.state.count);
+    //console.log('Sync count value:', this.state.count);
+  }
+
+  incrementFive() {
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
   }
 
   render() {
     return (
       <div>
         <div>Count - {this.state.count}</div>
-        <button onClick={() => this.increment()}>Increment</button>
+        <button onClick={() => this.incrementFive()}>Increment</button>
       </div>
     )
   }
