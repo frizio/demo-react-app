@@ -7,12 +7,12 @@ class ParentComponent extends Component {
     super(props)
   
     this.state = {
-       parentName: 'John the Parent'
+       parentName: 'Jerry the Parent'
     }
   }
   
-  greetParent = ()=> {
-    alert(`Hello from ${this.state.parentName}`);
+  greetParent = (name)=> {
+    alert(`Hello from ${this.state.parentName}. The child is ${name}`);
   }
 
   render() {
