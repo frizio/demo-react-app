@@ -8,10 +8,12 @@ class EventBind extends Component {
     this.state = {
        message: 'Hello...!'
     }
+    this.clickHandler = this.clickHandler.bind(this);
   }
   
 
   clickHandler() {
+    console.log('Handler binded.');
     console.log(this);
     this.setState({
       message: '...Goodbye!'
@@ -22,7 +24,7 @@ class EventBind extends Component {
     return (
       <div>
         <div>{this.state.message}</div>
-        <button onClick={ () => this.clickHandler() }>Click me</button>
+        <button onClick={this.clickHandler}>Click me</button>
       </div>
     )
   }
