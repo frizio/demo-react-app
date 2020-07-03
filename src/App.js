@@ -13,6 +13,12 @@ class App extends Component {
         <Greet name='Al' heroName='Batman'/>
         {/* <Counter/> */}
         {/* <Message/> */}
+        {/* <Hello/> */}
+        <Welcome name='Dave' heroName='Jocker'/>
+        {/*
+        <Welcome name='Ed' heroName='Two Face'/>
+        <Welcome name='Fran' heroName='Catwoman'e/>
+        */}
         {/*
         <Greet name='Al' heroName='Batman'>
           <p>This is a child props/component</p>
@@ -22,13 +28,6 @@ class App extends Component {
         </Greet>
         <Greet name='Carl' heroName='Alfred' />
         */}
-        <Welcome name='Dave' heroName='Jocker'/>
-        {/*
-        <Welcome name='Ed' heroName='Two Face'/>
-        <Welcome name='Fran' heroName='Catwoman'e/>
-        */}
-
-        {/* <Hello/> */}
       </div>
     );
   }
