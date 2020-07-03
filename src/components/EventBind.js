@@ -12,21 +12,17 @@ class EventBind extends Component {
   
 
   clickHandler() {
-    console.log('Create a state props messagge, bind it to ui and change them with event handler.');
     console.log(this);
-    console.log('this is undefined. -> Binding event handling')
-    /*
     this.setState({
       message: '...Goodbye!'
     });
-    */
   }
 
   render() {
     return (
       <div>
         <div>{this.state.message}</div>
-        <button onClick={this.clickHandler}>Click me</button>
+        <button onClick={this.clickHandler.bind(this)}>Click me</button>
       </div>
     )
   }
