@@ -14,7 +14,7 @@ class UserGreeting extends Component {
   render() {
 
     return (
-      this.state.isLoggedIn ? <div>Welcome frizio!</div> : <div>Welcome guest!</div>
+      this.state.isLoggedIn && <div>Welcome frizio!</div>
     )
     
   }
