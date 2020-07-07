@@ -6,18 +6,23 @@ class UserGreeting extends Component {
     super(props)
   
     this.state = {
-       isLoggedIn: true
+       isLoggedIn: false
     }
   }
   
 
   render() {
+
+    let message;
     if (this.state.isLoggedIn) {
-      return <div>Welcome frizio!</div>
+      message = <div>Welcome frizio!</div>;
     } else {
-      return <div>Welcome guest!</div>
+      message = <div>Welcome guest!</div>;
     }
+    return <div>{message}</div>
+    
   }
+
 }
 
 export default UserGreeting
