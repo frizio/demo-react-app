@@ -9,7 +9,7 @@ function NameList() {
     {id: 3, name: 'Carl', age: '18', skill: 'Vue'},
   ];
 
-const personList = persons.map(person => ( <Person person={person}/> ) );
+const personList = persons.map(person => ( <Person key={person.name} person={person}/> ) );
 
   return (
     <div>
