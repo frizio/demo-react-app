@@ -1,4 +1,5 @@
 import React from 'react'
+import Person from './Person';
 
 function NameList() {
 
@@ -8,11 +9,11 @@ function NameList() {
     {id: 3, name: 'Carl', age: '18', skill: 'Vue'},
   ];
 
-const nameList = persons.map(person => <h2>I'm {person.name}. I have {person.age} yo. My skill is {person.skill}</h2>);
+const personList = persons.map(person => ( <Person person={person}/> ) );
 
   return (
     <div>
-      { nameList }
+      { personList }
     </div>
   )
 }
