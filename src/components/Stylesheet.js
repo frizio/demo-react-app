@@ -7,7 +7,7 @@ function Stylesheet(props) {
 
   return (
     <div>
-      <h2 className={className}>Demo stylesheet</h2>
+      <h2 className={`${className} font-xl`}>Demo stylesheet</h2>
     </div>
   )
 }
