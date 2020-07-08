@@ -14,12 +14,17 @@ import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import InlineStyling from './components/InlineStyling';
 
+import './css/appStyles.css'
+import styles from  './css/appStyles.module.css'
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Stylesheet primary={true} />
         <InlineStyling/>
+        <h2 className='error'>This is an error</h2>
+        <h2 className={styles.success}>This is a success</h2>
         {/* <NameList/> */}
         {/* <UserGreeting/> */}
         {/* <ParentComponent/> */}
