@@ -29,9 +29,14 @@ class FormHandling extends Component {
     );
   }
 
+  handleSubmit = (event) => {
+    alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`);
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label>Username</label>
           <input type="text" 
@@ -51,6 +56,7 @@ class FormHandling extends Component {
             <option value="vue">Vue</option>
           </select>
         </div>
+        <button>Submit</button>
       </form>
     )
   }
