@@ -15,6 +15,20 @@ class LifecycleMountingChildren extends Component {
     return null;
   }
 
+  shouldComponentUpdate() {
+    console.log('Children shouldComponentUpdate method called');
+    return true;
+  }
+
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('Children getSnapshotBeforeUpdate method called');
+    return null;
+  }
+
+  componentDidUpdate() {
+    console.log('Children componentDidUpdate method called');
+  }
+
   render() {
     console.log('Children render method called');
     return (
