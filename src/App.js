@@ -17,12 +17,14 @@ import InlineStyling from './components/InlineStyling';
 import './css/appStyles.css'
 import styles from  './css/appStyles.module.css'
 import FormHandling from './components/FormHandling';
+import LifecycleMounting from './components/LifecycleMounting';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FormHandling/>
+        <LifecycleMounting/>
+        {/* <FormHandling/> */}
         {/* <Stylesheet primary={true} />
         <InlineStyling/>
         <h2 className='error'>This is an error</h2>
