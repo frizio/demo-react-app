@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -18,12 +18,14 @@ import './css/appStyles.css'
 import styles from  './css/appStyles.module.css'
 import FormHandling from './components/FormHandling';
 import LifecycleMounting from './components/LifecycleMounting';
+import FragmentDemo from './components/FragmentDemo';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LifecycleMounting/>
+        <FragmentDemo/>
+        {/* <LifecycleMounting/> */}
         {/* <FormHandling/> */}
         {/* <Stylesheet primary={true} />
         <InlineStyling/>
