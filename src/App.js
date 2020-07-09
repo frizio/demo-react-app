@@ -19,12 +19,14 @@ import styles from  './css/appStyles.module.css'
 import FormHandling from './components/FormHandling';
 import LifecycleMounting from './components/LifecycleMounting';
 import FragmentDemo from './components/FragmentDemo';
+import FragmentTable from './components/FragmentTable';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FragmentDemo/>
+        <FragmentTable/>
+        {/* <FragmentDemo/> */}
         {/* <LifecycleMounting/> */}
         {/* <FormHandling/> */}
         {/* <Stylesheet primary={true} />
