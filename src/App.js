@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, PureComponent } from 'react';
 import './App.css';
 import Greet from './components/Greet';
 import Welcome from './components/Welcome';
@@ -20,12 +20,14 @@ import FormHandling from './components/FormHandling';
 import LifecycleMounting from './components/LifecycleMounting';
 import FragmentDemo from './components/FragmentDemo';
 import FragmentTable from './components/FragmentTable';
+import PureComponentDemo from './components/PureComponentDemo';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FragmentTable/>
+        <PureComponentDemo/>
+        {/* <FragmentTable/> */}
         {/* <FragmentDemo/> */}
         {/* <LifecycleMounting/> */}
         {/* <FormHandling/> */}
