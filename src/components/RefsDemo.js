@@ -5,11 +5,18 @@ class RefsDemo extends Component {
   constructor(props) {
     super(props)
     this.inputRef = React.createRef();
+    this.cbRef = null;
+    this.setCbRef = element => {
+      this.cbRef = element;
+    }
   }
 
   componentDidMount() {
     console.log(this.inputRef);
-    this.inputRef.current.focus();
+    //this.inputRef.current.focus();
+    if (this.cbRef) {
+      this.cbRef.focus()
+    }
   }
 
   clickHandler = () => {
@@ -21,6 +28,7 @@ class RefsDemo extends Component {
       <div>
         <h2>Refs Demo</h2>
         <input type="text" ref={this.inputRef} />
+        <input type="text" ref={this.setCbRef} />
         <button onClick={this.clickHandler}>Click me</button>
       </div>
     )
