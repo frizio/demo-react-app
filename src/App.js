@@ -22,12 +22,14 @@ import FragmentDemo from './components/FragmentDemo';
 import FragmentTable from './components/FragmentTable';
 import PureComponentDemo from './components/PureComponentDemo';
 import PureComponentDemoParentComp from './components/PureComponentDemoParentComp';
+import RefsDemo from './components/RefsDemo';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PureComponentDemoParentComp/>
+        <RefsDemo/>
+        {/* <PureComponentDemoParentComp/> */}
         {/* <FragmentTable/> */}
         {/* <FragmentDemo/> */}
         {/* <LifecycleMounting/> */}
